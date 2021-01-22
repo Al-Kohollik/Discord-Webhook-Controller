@@ -1,0 +1,26 @@
+{
+  "name": "discord-webhook-controller",
+  "version": "1.0.0",
+  "description": "Control Discord webhooks to say whatever you want",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run buildwin && npm run buildmac && npm run buildlinux",
+    "buildwin": "pkg index.js --config package.json --target node12-win --out-path ./discord-webhook-controller-windows",
+    "buildmac": "pkg index.js --config package.json --target node12-macos --out-path ./discord-webhook-controller-macos",
+    "buildlinux": "pkg index.js --config package.json --target node12-linux --out-path ./discord-webhook-controller-linux"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "node_modules/**/*"
+    ]
+  },
+  "author": "al-kohollik",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "ini": "^2.0.0"
+  }
+}
