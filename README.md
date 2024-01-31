@@ -10,5 +10,4 @@ All you need to do to set this up is the Webhook URL of the webhook you want to 
 3. Type and enter any messages you want to be sent from the webhook into the console.
 
 ### Help/Contact
-Create an issue or contact me on Discord at `Al Kohollik#7268`
-(Note: The Macos and Linux builds are included but since I only have a Windows machine, I have no idea if they actually work. Please let me know if they break.)
+Create an issue or contact me on Discord @ `alkohollik`
